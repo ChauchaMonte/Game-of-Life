@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://src/main.gd" type="Script" id=1]
+[ext_resource path="res://scenes/hud.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/grid.gd" type="Script" id=3]
+[ext_resource path="res://scenes/grid.tscn" type="PackedScene" id=4]
+
+[node name="main" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="grid" parent="." instance=ExtResource( 4 )]
+script = ExtResource( 3 )
+
+[node name="hud" parent="." instance=ExtResource( 2 )]
+position = Vector2( 115.827, 704.483 )
